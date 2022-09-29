@@ -1,0 +1,62 @@
+.home {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+//   flex-direction: column;
+//   max-width: 800px;align-items:center;
+  button{
+    background-color: coral;
+    border: none;
+    padding: 15px;
+    margin-bottom: 2rem;
+    border-radius : 8px;
+  }
+  .table {
+    thead {
+      tr {
+        background-color: rgb(142, 202, 255);
+        th {
+          padding: 25px;
+          text-align: center;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: rgb(188, 223, 223);
+        }
+
+        border-bottom: 1px solid black;
+
+        td {
+          padding: 25px;
+          text-align: center;
+        }
+
+        .btn {
+          border-radius: 8px;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .btn_update{
+            background-color: rgb(32, 189, 0);
+            color: white;
+        }
+
+        .btn_delete {
+          margin: 0 20px;
+          background-color: rgb(250, 18, 18);
+          color: white;
+        }
+        .btn_view {
+
+            background-color: rgb(57, 18, 250);
+            color: white;
+          }
+      }
+    }
+  }
+}
